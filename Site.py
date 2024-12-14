@@ -12,7 +12,7 @@ import plotly.express as px
 from io import BytesIO
 
 #Import du df dans le fichier et modification
-data = pd.read_csv("/Users/ruben/PycharmProjects/SDA/ProjetDataM_Viz_Text/data.csv", delimiter=";")
+data = pd.read_csv("[Your Path]data.csv", delimiter=";")
 df = pd.DataFrame(data)
 df["Date"] = df['Date'].apply(lambda x: re.search(r"\d{4}-\d{2}-\d{2}", x).group(0))
 df['Month'] = df['Date'].apply(lambda x: re.search(r"\d{4}-(\d{2})-\d{2}", x).group(1))
