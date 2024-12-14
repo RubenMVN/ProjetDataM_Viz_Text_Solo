@@ -4,7 +4,7 @@ from nltk.stem import SnowballStemmer
 
 
 document = []
-with open("/Users/ruben/PycharmProjects/SDA/ProjetDataM_Viz_Text/corpus.txt","r") as f:
+with open("[Your Path]corpus.txt","r") as f:
     document.append(f.read())
 document = document[0]
 
